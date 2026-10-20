@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Studio 266 · Propuesta 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="container">
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="brand">
+        <img src="assets/logo.png" alt="Studio 266">
+        <span class="brand-name">Studio 266<small>Since 2017</small></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#clases">Clases</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#profesoras">Profesoras</a></li>
+        <li><a href="#/horarios">Horarios</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li class="menu-faq"><a href="#/faq">FAQ</a></li>
+        <li class="menu-theme"><button type="button" data-theme-toggle>Modo oscuro</button></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-theme" id="themeToggle" type="button" aria-label="Cambiar tema" data-theme-toggle>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <span>Oscuro</span>
+        </button>
+        <a href="#/horarios" class="btn btn-red nav-cta">Reservar</a>
+        <a href="#/faq" class="nav-faq" aria-label="Preguntas frecuentes">FAQ</a>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+          <i></i><i></i><i></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="view" id="viewHome">
+  <section class="hero container" id="inicio">
+    <div class="hero-main">
+      <span class="chip">Pole fitness &amp; danza aérea</span>
+      <h1>Es una lástima que una mujer envejezca sin ver <span class="pink">la belleza y la fuerza</span> de la que su cuerpo es capaz.</h1>
+      <div class="hero-buttons">
+        <a href="#clases" class="btn btn-red">Reservar mi clase</a>
+        <a href="#/horarios" class="btn btn-white">Ver horarios</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="honey honey-hero" data-fit="462">
+        <div class="hex hx-photo" style="left:57px;top:0"><span>Foto</span></div>
+        <div class="hex hx-red" style="left:213px;top:0"></div>
+        <div class="hex hx-photo" style="left:-21px;top:135px"><span>Foto</span></div>
+        <div class="hex hx-pink" style="left:135px;top:135px"><span>Foto<br>principal</span></div>
+        <div class="hex hx-photo" style="left:291px;top:135px"><span>Foto</span></div>
+        <div class="hex hx-photo" style="left:57px;top:270px"><span>Foto</span></div>
+        <div class="hex hx-photo" style="left:213px;top:270px"><span>Foto</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features container">
+    <article class="feature feature-red">
+      <h3>Desde cero, sin experiencia</h3>
+      <p>Aprende a tu ritmo con profesoras que te acompañan.</p>
+    </article>
+    <article class="feature feature-pink">
+      <h3>Cupos limitados</h3>
+      <p>Cada clase tiene pocos lugares. Reserva a tiempo.</p>
+    </article>
+    <article class="feature feature-black">
+      <h3>Pago seguro con CardNet</h3>
+      <p>Sin crear cuenta ni contraseña.</p>
+    </article>
+  </section>
+
+  <section class="section container" id="clases">
+    <div class="section-head split">
+      <div>
+        <span class="eyebrow">01 — Clases</span>
+        <h2>Nuestras <span class="red">clases</span></h2>
+      </div>
+      <p class="muted">Todas las clases son aptas para principiantes: no necesitas experiencia previa. Cada horario tiene cupos limitados, así que elige tu clase, revisa los horarios disponibles y reserva tu lugar.</p>
+    </div>
+    <div class="class-grid" id="classGrid"></div>
+    <div class="single-class">
+      <div class="single-text">
+        <span class="eyebrow dark">Sin compromiso mensual</span>
+        <h3>Clase única</h3>
+        <dl class="cc-meta">
+          <div><dt>Precio</dt><dd>[PRECIO]</dd></div>
+          <div><dt>Cupos por clase</dt><dd>[N]</dd></div>
+        </dl>
+      </div>
+      <div class="single-pattern"></div>
+      <a href="#/horarios" class="btn btn-black">
+        Ver horarios
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="section container studio">
+    <div class="arch-wrap">
+      <div class="arch-shadow"></div>
+      <div class="arch"><span class="tag">Foto del Studio</span></div>
+    </div>
+    <div class="studio-text">
+      <span class="eyebrow">02 — El Studio</span>
+      <h2>El <span class="red">Studio</span></h2>
+      <p class="muted">[Texto sobre el Studio: quiénes son, qué los hace diferentes y qué pueden esperar las alumnas.]</p>
+      <div class="stats">
+        <div><strong data-count="2017">2017</strong><span>Desde</span></div>
+        <div><strong data-count="4">4</strong><span>Disciplinas</span></div>
+        <div><strong>0</strong><span>Experiencia previa</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container team" id="profesoras">
+    <div class="team-text">
+      <span class="eyebrow">03 — Equipo</span>
+      <h2>Las <span class="red">profesoras</span></h2>
+      <p class="muted">[Texto breve sobre el equipo.]</p>
+      <div class="team-roster">
+        <div class="team-pole" aria-hidden="true"><i class="tp-top"></i><i class="tp-bar"></i><i class="tp-base"></i></div>
+        <span class="dancer-pos" aria-hidden="true">
+          <svg class="dancer" viewBox="0 0 60 110" width="60" height="110">
+            <g fill="currentColor">
+              <ellipse cx="18.6" cy="19.2" rx="4" ry="4.9" transform="rotate(-18 18.6 19.2)"/>
+              <circle cx="15.2" cy="15.6" r="2.2"/>
+              <path d="M19.5 27.5C22.5 26.8 26 27.2 26.5 30C26.2 35 23.6 40 23.2 45C23 49 25.5 52.5 25 56C22 58.5 17.5 59 15.5 57C15.2 52.5 17.6 49 17.6 45.5C17.2 40.5 16.6 33 19.5 27.5Z"/>
+            </g>
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 23.5L21.4 28" stroke-width="2.6"/>
+              <path d="M24.5 29.5L28.3 16L30 5" stroke-width="2.7"/>
+              <path d="M20.5 30.5Q13 35 9 41Q6.6 44.4 4 45.6" stroke-width="2.3"/>
+              <path d="M23 55L31.4 66" stroke-width="6"/>
+              <path d="M31.4 66Q30 72.5 25.5 79" stroke-width="3.6"/>
+              <path d="M25.5 79L22.4 82.2" stroke-width="2.1"/>
+              <path d="M18 56L12 79" stroke-width="6"/>
+              <path d="M12 79L6.6 99" stroke-width="3.8"/>
+              <path d="M6.6 99L4.2 106" stroke-width="2.1"/>
+            </g>
+          </svg>
+        </span>
+        <ul class="team-list">
+          <li data-prof="1"><span class="red">01</span><div><strong>Luisa Villar</strong><em>Instructora de Pole fitness, danza aérea, flexibilidad y parada de manos</em></div></li>
+          <li data-prof="2"><span class="red">02</span><div><strong>Eliany Henriquez</strong><em>Instructora de Pole fitness y aro aéreo</em></div></li>
+          <li data-prof="3"><span class="red">03</span><div><strong>María Isabel Báez</strong><em>Instructora de danza aérea y flexibilidad</em></div></li>
+          <li data-prof="4"><span class="red">04</span><div><strong>Daniela Batista</strong><em>Instructora de Pole fitness</em></div></li>
+          <li data-prof="5"><span class="red">05</span><div><strong>Ana Espinal</strong><em>Instructora de Pole fitness</em></div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="team-visual">
+      <div class="honey honey-team" data-fit="587">
+        <div class="hex hx-photo" data-prof="1" style="left:0;top:0"><span>01<br>Luisa</span></div>
+        <div class="hex hx-photo" data-prof="2" style="left:238px;top:0"><span>02<br>Eliany</span></div>
+        <div class="hex hx-photo" data-prof="3" style="left:119px;top:206px"><span>03<br>María Isabel</span></div>
+        <div class="hex hx-pink" style="left:357px;top:206px"><span>Conoce<br>al equipo</span></div>
+        <div class="hex hx-photo" data-prof="4" style="left:0;top:412px"><span>04<br>Daniela</span></div>
+        <div class="hex hx-photo" data-prof="5" style="left:238px;top:412px"><span>05<br>Ana</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container gallery" id="momentos">
+    <div class="section-head center">
+      <span class="eyebrow">04 — Momentos</span>
+      <h2>Momentos <span class="red">266</span></h2>
+      <p class="muted lead">Lo mejor de nuestras clases, shows y presentaciones.</p>
+    </div>
+    <div class="honey honey-gallery" data-fit="996">
+      <div class="hex hx-photo" style="left:0;top:0"><span>Foto</span></div>
+      <div class="hex hx-photo" style="left:200px;top:0"><span>Foto</span></div>
+      <div class="hex hx-red" style="left:400px;top:0"></div>
+      <div class="hex hx-photo" style="left:600px;top:0"><span>Foto</span></div>
+      <div class="hex hx-pink" style="left:800px;top:0"></div>
+      <div class="hex hx-photo" style="left:100px;top:173px"><span>Foto</span></div>
+      <div class="hex hx-photo" style="left:300px;top:173px"><span>Foto</span></div>
+      <div class="hex hx-pink" style="left:500px;top:173px"><span>Video</span></div>
+      <div class="hex hx-red" style="left:700px;top:173px"></div>
+    </div>
+  </section>
+
+  <section class="section container events" id="eventos">
+    <div class="section-head split">
+      <div>
+        <span class="eyebrow">05 — Eventos</span>
+        <h2>Próximos <span class="red">eventos</span></h2>
+      </div>
+      <p class="muted">Workshops, masterclasses, shows y más. Desliza para ver todo lo que viene.</p>
+    </div>
+    <div class="events-track" id="eventsTrack">
+      <article class="event-card">
+        <div class="event-inner">
+          <div class="event-media em-red">
+            <div class="event-date"><strong>08</strong><span>Nov</span></div>
+            <span class="event-type">Workshop</span>
+          </div>
+          <div class="event-body">
+            <h3>[Nombre del evento]</h3>
+            <ul class="event-meta"><li>Sábado · [00:00]</li><li>Studio 266</li></ul>
+            <p class="event-desc">[Descripción del evento: de qué trata, a quién va dirigido, qué incluye y qué necesitas llevar.]</p>
+            <div class="event-foot"><strong>[PRECIO]</strong><a href="#ubicacion" class="btn btn-black btn-sm">Me interesa</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-inner">
+          <div class="event-media em-pink">
+            <div class="event-date"><strong>22</strong><span>Nov</span></div>
+            <span class="event-type">Masterclass</span>
+          </div>
+          <div class="event-body">
+            <h3>[Nombre del evento]</h3>
+            <ul class="event-meta"><li>Sábado · [00:00]</li><li>Studio 266</li></ul>
+            <p class="event-desc">[Descripción del evento: de qué trata, a quién va dirigido, qué incluye y qué necesitas llevar.]</p>
+            <div class="event-foot"><strong>[PRECIO]</strong><a href="#ubicacion" class="btn btn-black btn-sm">Me interesa</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-inner">
+          <div class="event-media em-black">
+            <div class="event-date"><strong>06</strong><span>Dic</span></div>
+            <span class="event-type">Showcase</span>
+          </div>
+          <div class="event-body">
+            <h3>[Nombre del evento]</h3>
+            <ul class="event-meta"><li>Viernes · [00:00]</li><li>[Lugar]</li></ul>
+            <p class="event-desc">[Descripción del evento: de qué trata, a quién va dirigido, qué incluye y qué necesitas llevar.]</p>
+            <div class="event-foot"><strong>[PRECIO]</strong><a href="#ubicacion" class="btn btn-black btn-sm">Me interesa</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-inner">
+          <div class="event-media em-photo">
+            <div class="event-date"><strong>13</strong><span>Dic</span></div>
+            <span class="event-type">Clase abierta</span>
+          </div>
+          <div class="event-body">
+            <h3>[Nombre del evento]</h3>
+            <ul class="event-meta"><li>Sábado · [00:00]</li><li>Studio 266</li></ul>
+            <p class="event-desc">[Descripción del evento: de qué trata, a quién va dirigido, qué incluye y qué necesitas llevar.]</p>
+            <div class="event-foot"><strong>[PRECIO]</strong><a href="#ubicacion" class="btn btn-black btn-sm">Me interesa</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-inner">
+          <div class="event-media em-red">
+            <div class="event-date"><strong>20</strong><span>Dic</span></div>
+            <span class="event-type">Social</span>
+          </div>
+          <div class="event-body">
+            <h3>[Nombre del evento]</h3>
+            <ul class="event-meta"><li>Sábado · [00:00]</li><li>Studio 266</li></ul>
+            <p class="event-desc">[Descripción del evento: de qué trata, a quién va dirigido, qué incluye y qué necesitas llevar.]</p>
+            <div class="event-foot"><strong>[PRECIO]</strong><a href="#ubicacion" class="btn btn-black btn-sm">Me interesa</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-inner">
+          <div class="event-media em-pink">
+            <div class="event-date"><strong>10</strong><span>Ene</span></div>
+            <span class="event-type">Workshop</span>
+          </div>
+          <div class="event-body">
+            <h3>[Nombre del evento]</h3>
+            <ul class="event-meta"><li>Sábado · [00:00]</li><li>Studio 266</li></ul>
+            <p class="event-desc">[Descripción del evento: de qué trata, a quién va dirigido, qué incluye y qué necesitas llevar.]</p>
+            <div class="event-foot"><strong>[PRECIO]</strong><a href="#ubicacion" class="btn btn-black btn-sm">Me interesa</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-inner">
+          <div class="event-media em-black">
+            <div class="event-date"><strong>24</strong><span>Ene</span></div>
+            <span class="event-type">Masterclass</span>
+          </div>
+          <div class="event-body">
+            <h3>[Nombre del evento]</h3>
+            <ul class="event-meta"><li>Sábado · [00:00]</li><li>Studio 266</li></ul>
+            <p class="event-desc">[Descripción del evento: de qué trata, a quién va dirigido, qué incluye y qué necesitas llevar.]</p>
+            <div class="event-foot"><strong>[PRECIO]</strong><a href="#ubicacion" class="btn btn-black btn-sm">Me interesa</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-inner">
+          <div class="event-media em-photo">
+            <div class="event-date"><strong>07</strong><span>Feb</span></div>
+            <span class="event-type">Competencia</span>
+          </div>
+          <div class="event-body">
+            <h3>[Nombre del evento]</h3>
+            <ul class="event-meta"><li>Domingo · [00:00]</li><li>[Lugar]</li></ul>
+            <p class="event-desc">[Descripción del evento: de qué trata, a quién va dirigido, qué incluye y qué necesitas llevar.]</p>
+            <div class="event-foot"><strong>[PRECIO]</strong><a href="#ubicacion" class="btn btn-black btn-sm">Me interesa</a></div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="events-controls">
+      <span class="ev-count" aria-live="polite"><b id="evCur">01</b><span>/</span><span id="evTotal">08</span></span>
+      <div class="ev-progress" aria-hidden="true"><i id="evBar"></i></div>
+      <div class="ev-arrows">
+        <button type="button" class="ev-arrow ev-prev" id="evPrev" aria-label="Evento anterior"><span class="ev-arrow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></span></button>
+        <button type="button" class="ev-arrow ev-next" id="evNext" aria-label="Evento siguiente"><span class="ev-arrow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container location" id="ubicacion">
+    <div class="location-card">
+    <div class="map" id="map" data-query="Santo Domingo, República Dominicana">
+      <iframe title="Mapa de ubicación de Studio 266" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <div class="visit-wrap">
+    <div class="visit-shadow" aria-hidden="true"></div>
+    <div class="visit-card">
+      <span class="visit-hex" aria-hidden="true"></span>
+      <span class="eyebrow">06 — Ubicación</span>
+      <h2>Visí<span class="red">tanos</span></h2>
+      <p class="visit-lead">Escríbenos o pasa por el Studio. Te esperamos.</p>
+      <ul class="visit-list">
+        <li><span class="visit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><small>Dirección</small><strong>[Dirección], [Ciudad]</strong></div></li>
+        <li><span class="visit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>Horario</small><strong>[días y horas]</strong></div></li>
+        <li><span class="visit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3.5 20l1.2-4.2A8.5 8.5 0 1 1 20.5 11.5z"/></svg></span><div><small>WhatsApp</small><strong>[teléfono]</strong></div></li>
+        <li><span class="visit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></span><div><small>Instagram</small><strong>[@usuario]</strong></div></li>
+      </ul>
+      <div class="visit-actions">
+        <a href="https://www.google.com/maps" class="btn btn-red" id="directionsLink" target="_blank" rel="noopener">Cómo llegar</a>
+        <a href="#ubicacion" class="btn btn-white">WhatsApp</a>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+</main>
+
+<section class="view view-page faq" id="viewFaq" hidden>
+  <div class="container">
+    <div class="page-top">
+      <button type="button" class="back-btn" data-back="home" data-fallback="#inicio"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Volver</button>
+    </div>
+    <div class="section-head center">
+      <span class="eyebrow">FAQ</span>
+      <h2 tabindex="-1" data-view-title>Preguntas <span class="red">frecuentes</span></h2>
+      <p class="muted lead">Todo lo que necesitas saber antes de tu primera clase.</p>
+    </div>
+      <div class="faq-list">
+        <details open><summary>¿Cuál es el rango de edad?</summary><div class="faq-body"><p>[Respuesta del Studio]</p></div></details>
+        <details><summary>¿Necesito experiencia?</summary><div class="faq-body"><p>[Respuesta del Studio]</p></div></details>
+        <details><summary>¿Mi peso influye?</summary><div class="faq-body"><p>[Respuesta del Studio]</p></div></details>
+        <details><summary>¿Enseñan desde cero?</summary><div class="faq-body"><p>[Respuesta del Studio]</p></div></details>
+        <details><summary>¿Cuál es la ubicación?</summary><div class="faq-body"><p>[Dirección del Studio]</p></div></details>
+        <details><summary>¿Cuál es el horario laborable?</summary><div class="faq-body"><p>[Horario del Studio]</p></div></details>
+      </div>
+    <div class="faq-cta">
+      <div>
+        <strong>¿No encontraste tu respuesta?</strong>
+        <span>Escríbenos y te ayudamos.</span>
+      </div>
+      <a href="#ubicacion" class="btn btn-red btn-sm">Contáctanos</a>
+    </div>
+  </div>
+</section>
+
+<section class="view view-page" id="viewHorarios" hidden>
+  <div class="container">
+    <div class="page-top">
+      <button type="button" class="back-btn" data-back="home"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Volver</button>
+      <ol class="steps">
+        <li class="on">Horario</li>
+        <li>Tus datos</li>
+        <li>Pago</li>
+      </ol>
+    </div>
+    <div class="section-head split">
+      <div>
+        <span class="eyebrow">Paso 1 de 3 — Elige tu horario</span>
+        <h2 tabindex="-1" data-view-title>Horarios y <span class="red">cupos</span></h2>
+      </div>
+      <p class="muted" id="horariosSub"></p>
+    </div>
+    <div class="filters" id="scheduleFilters" role="tablist" aria-label="Filtrar por clase"></div>
+    <div class="schedule" id="scheduleList"></div>
+    <p class="note">Los horarios, cupos y reglas definitivos los enviará el Studio por escrito.</p>
+  </div>
+</section>
+
+<section class="view view-page" id="viewReserva" hidden>
+  <div class="container">
+    <div class="page-top">
+      <button type="button" class="back-btn" data-back="horarios"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Volver a horarios</button>
+    </div>
+    <div class="booking">
+      <div class="booking-intro">
+        <span class="eyebrow light">Paso 2 de 3 — Tus datos</span>
+        <h2 tabindex="-1" data-view-title>Reserva tu lugar.</h2>
+        <p>Completa tus datos para confirmar tu cupo. Luego pagas seguro con CardNet, sin crear cuenta.</p>
+        <ol class="steps steps-light" id="bookingSteps">
+          <li data-step="1">Horario</li>
+          <li data-step="2">Tus datos</li>
+          <li data-step="3">Pago</li>
+        </ol>
+        <div class="honey honey-mini" data-fit="296">
+          <div class="hex hx-dark" style="left:50px;top:0"></div>
+          <div class="hex hx-soft" style="left:150px;top:0"></div>
+          <div class="hex hx-dark" style="left:0;top:86px"></div>
+          <div class="hex hx-red-dark" style="left:100px;top:86px"></div>
+          <div class="hex hx-soft" style="left:200px;top:86px"></div>
+        </div>
+      </div>
+      <form class="booking-form" id="bookingForm" novalidate>
+        <h4>Tu reserva</h4>
+        <div class="pick full" id="pick">
+          <div class="pick-filled">
+            <span class="pick-hex"></span>
+            <div class="pick-info">
+              <small>Clase seleccionada</small>
+              <strong id="pickClass"></strong>
+              <span id="pickWhen"></span>
+            </div>
+            <div class="pick-price"><small>Precio</small><strong id="pickPrice"></strong></div>
+            <button type="button" class="pick-back" data-back="horarios">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+              Cambiar horario
+            </button>
+          </div>
+        </div>
+        <label class="full">Modalidad<select name="modalidad"><option>Clase única (1 cupo)</option><option>Plan mensual</option></select></label>
+
+        <h4>Tus datos</h4>
+        <label class="full">Nombre completo<input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" required></label>
+        <label>Cédula<input type="text" name="cedula" placeholder="000-0000000-0" inputmode="numeric" required></label>
+        <label>Fecha de nacimiento<input type="date" name="nacimiento" required></label>
+        <label>Teléfono<input type="tel" name="telefono" placeholder="809 000 0000" autocomplete="tel" required></label>
+        <label>Correo<input type="email" name="correo" placeholder="tu@correo.com" autocomplete="email" required></label>
+        <label class="full">¿Alguna condición de salud? (opcional)<input type="text" name="salud" placeholder="Describe brevemente"></label>
+
+        <h4>Contacto de emergencia</h4>
+        <label>Nombre<input type="text" name="emergencia_nombre" placeholder="Nombre completo" required></label>
+        <label>Número<input type="tel" name="emergencia_tel" placeholder="809 000 0000" required></label>
+        <label class="full">Parentesco<input type="text" name="parentesco" placeholder="Madre, pareja, amiga..."></label>
+
+        <label class="check full"><input type="checkbox" name="terminos" required><span>Acepto los términos y la política de privacidad, y autorizo el uso de mis datos de salud y de contacto para la clase.</span></label>
+        <button type="submit" class="btn btn-black btn-block full">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          Continuar al pago con CardNet
+        </button>
+        <p class="secure full">Pago seguro con CardNet. Sin crear cuenta ni contraseña.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer container">
+  <span>© Studio 266 · [Dirección], [Ciudad]</span>
+  <span>[Instagram] · WhatsApp [teléfono]</span>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
